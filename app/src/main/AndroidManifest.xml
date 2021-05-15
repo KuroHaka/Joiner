@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".LoginPageActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".interfaz.MainSelectorEmpleados">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
