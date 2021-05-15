@@ -1,15 +1,23 @@
 package com.example.joiner;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class MainActivity extends AppCompatActivity {
+
+public class FirebaseTestActivity extends AppCompatActivity {
     private FirebaseFirestore db;
     private Button but;
     @Override
@@ -18,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.startup_page);
+
         but = findViewById(R.id.initial_login_button);
         but.setOnClickListener(new View.OnClickListener() {
             @Override
