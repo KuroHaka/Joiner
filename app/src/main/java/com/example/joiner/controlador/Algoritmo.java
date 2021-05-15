@@ -44,13 +44,13 @@ public class Algoritmo {
     }
 
     /**
-     * Hace una media del peso de las tags de todos los candidatos aceptados y reasigna ese peso a las tags
+     * Hace una media del peso de las tags de todos los candidatos aceptados y reasigna ese peso a las tags del puesto
      */
     private void addKinTags(Candidato candidato){
         ArrayList<Tag> tagsCandidato = candidato.getTags();
         int tempIndex;
         for(Tag tag: tagsCandidato){
-            tempIndex = candi.indexOf(tag);
+            tempIndex = candidato.indexOf(tag);
             if(tempIndex)
         }
     }
