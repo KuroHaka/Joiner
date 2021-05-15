@@ -42,14 +42,14 @@ public class AdapterEmpleado extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.item, container, false);
 
         ImageView imageView;
-        TextView title, desc;
+        TextView employerName, desc;
 
-        imageView = view.findViewById(R.id.employerName);
-        title = view.findViewById(R.id.title);
+        imageView = view.findViewById(R.id.image);
+        employerName = view.findViewById(R.id.employerName);
         desc = view.findViewById(R.id.desc);
 
         imageView.setImageResource(models.get(position).getImage());
-        title.setText(models.get(position).getEmpleadoName());
+        employerName.setText(models.get(position).getEmpleadoName());
         desc.setText(models.get(position).getDesc());
 
 
