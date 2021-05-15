@@ -105,9 +105,11 @@ public class Candidato {
 
     private Map<String, Object> email;
 
-    public String getDbUsername(){
+    public Candidato(){}
 
-        FirestoreHandler.db.collection("email")
+    public String getDbUsername(FirebaseFirestore db){
+
+        db.collection("email")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override

@@ -12,7 +12,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.joiner.controlador.Candidato;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class MainActivity extends AppCompatActivity {
+    private static FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Button but;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.startup_page);
 
-
+        Candidato candidato = new Candidato();
+        candidato.getDbUsername(db);
         but = findViewById(R.id.initial_login_button);
         but.setOnClickListener(new View.OnClickListener() {
             @Override
