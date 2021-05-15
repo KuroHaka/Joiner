@@ -30,4 +30,8 @@ public class Puesto {
     public void setRestricciones(Restricciones restricciones) {
         this.restricciones = restricciones;
     }
+
+    public Puesto(){
+        tags = new ArrayList<>();
+    }
 }
