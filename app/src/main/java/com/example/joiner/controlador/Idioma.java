@@ -2,7 +2,7 @@ package com.example.joiner.controlador;
 
 public class Idioma {
     private String idioma;
-    private String nivel;
+    private int nivel;
 
     public String getIdioma() {
         return idioma;
@@ -12,11 +12,11 @@ public class Idioma {
         this.idioma = idioma;
     }
 
-    public String getNivel() {
+    public int getNivel() {
         return nivel;
     }
 
-    public void setNivel(String nivel) {
+    public void setNivel(int nivel) {
         this.nivel = nivel;
     }
 }
