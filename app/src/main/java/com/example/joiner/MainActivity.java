@@ -24,14 +24,13 @@ public class MainActivity extends AppCompatActivity {
         but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(this, LoginPageActivity.class);
-                startActivity(intent);
+                activity2();
             }
         });
-        /*TextView tV = findViewById(R.id.sign_up_txt);
-        String s_up_txt = "Sign Up";
-        SpannableString ss = new SpannableString(s_up_txt);
-        ss.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 7, Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
-        tV.setText(ss);*/
+
+    }
+    public void activity2() {
+        Intent intent = new Intent(this, LoginPageActivity.class);
+        startActivity(intent);
     }
 }
