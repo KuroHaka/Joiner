@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "364084065392",
+    "firebase_url": "https://joiner-2af28-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "joiner-2af28",
+    "storage_bucket": "joiner-2af28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364084065392:android:0aae42230e39aceb1530b5",
+        "android_client_info": {
+          "package_name": "com.example.joiner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364084065392-0t47tgvt8q1ia99g96dmnmnblsvc9s6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2-lJqnijkx1UZNDCVRYxKTUqVmLq3eDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364084065392-0t47tgvt8q1ia99g96dmnmnblsvc9s6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
