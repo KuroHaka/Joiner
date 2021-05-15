@@ -48,10 +48,21 @@ public class Algoritmo {
      */
     private void addKinTags(Candidato candidato){
         ArrayList<Tag> tagsCandidato = candidato.getTags();
-        int tempIndex;
-        for(Tag tag: tagsCandidato){
-            tempIndex = candidato.indexOf(tag);
-            if(tempIndex)
+        Puesto p = puesto;
+        int divider = candidatosAceptados.size();
+        for(Candidato ca : candidatosAceptados){
+            for(Tag t : ca.getTags())
+            {
+                int index = puesto.getTags().indexOf(t);
+                if(index != -1)
+                    puesto.getTags().set(index, t);
+            }
+        }
+
+        for(Tag t : p.getTags())
+        {
+            int valuemedia = t.getPeso()/ divider;
+            t.setPeso(valuemedia);
         }
     }
 }
