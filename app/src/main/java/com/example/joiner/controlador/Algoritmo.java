@@ -26,6 +26,7 @@ public class Algoritmo {
      */
     private int compareTags(Candidato candidato){
         int puntuacion = 0;
+        Tag tagTemp;
         for(Tag tag: puesto.getTags()){
             candidato.getTags().get(candidato.getTags().indexOf(tag));
         }
