@@ -19,10 +19,8 @@ public class Candidato {
     private Location ubicacion;
     private ArrayList<Formacion> formaciones;
     private ArrayList<Categoria> categorias;
-    private ArrayList<Idioma> idiomas;
     private ArrayList<Tag> tags;
-    private ArrayList<Habilidad> habilidades;
-    private int kinness;
+    private Integer kinness;
 
     public String getNombre() {
         return nombre;
@@ -72,14 +70,6 @@ public class Candidato {
         this.categorias = categorias;
     }
 
-    public ArrayList<Idioma> getIdiomas() {
-        return idiomas;
-    }
-
-    public void setIdiomas(ArrayList<Idioma> idiomas) {
-        this.idiomas = idiomas;
-    }
-
     public ArrayList<Tag> getTags() {
         Collections.sort(tags, new TagComparator());
         Collections.reverse(tags);
@@ -90,25 +80,17 @@ public class Candidato {
         this.tags = tags;
     }
 
-    public ArrayList<Habilidad> getHabilidades() {
-        return habilidades;
-    }
-
-    public void setHabilidades(ArrayList<Habilidad> habilidades) {
-        this.habilidades = habilidades;
-    }
-
     private Map<String, Object> email;
 
     public Candidato(String name){
         this.nombre = name;
     }
 
-    public int getKinness() {
+    public Integer getKinness() {
         return kinness;
     }
 
-    public void setKinness(int kinness) {
+    public void setKinness(Integer kinness) {
         this.kinness = kinness;
     }
 
