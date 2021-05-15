@@ -30,4 +30,10 @@ public class Categoria {
     public void setSubcategorias(ArrayList<Categoria> subcategorias) {
         this.subcategorias = subcategorias;
     }
+
+    public Categoria(int id, String name){
+        this.id = id;
+        this.name = name;
+        subcategorias = new ArrayList<>();
+    }
 }
