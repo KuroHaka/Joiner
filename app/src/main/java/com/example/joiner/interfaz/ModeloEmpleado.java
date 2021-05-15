@@ -1,6 +1,6 @@
 package com.example.joiner.interfaz;
 
-public class ModeloEmpleado {
+public class ModeloEmpleado extends Modelo{
     private int image;
     private String empleadoName;
     private String desc;

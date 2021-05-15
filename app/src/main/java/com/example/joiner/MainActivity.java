@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activity2();
+                login();
             }
         });
 
     }
-    public void activity2() {
-        Intent intent = new Intent(this, SelectorEmpleadosActivity.class);
+    public void login() {
+        Intent intent = new Intent(this, LoginPageActivity.class);
         startActivity(intent);
     }
 }
