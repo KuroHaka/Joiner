@@ -4,36 +4,40 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 
 public class FirebaseTestActivity extends AppCompatActivity {
-    private FirebaseFirestore db;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     private Button but;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        db = FirebaseFirestore.getInstance();
         super.onCreate(savedInstanceState);
+
+        db.collection("log_in_info")
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            System.out.println(document.get("Usuario"));
+                        }
+                    }
+                    else {
+                    }
+                });
+
 
         setContentView(R.layout.startup_page);
 
         but = findViewById(R.id.initial_login_button);
-        but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
+        but.setOnClickListener(v -> login());
 
     }
     public void login() {
