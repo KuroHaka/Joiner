@@ -5,12 +5,6 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -107,7 +101,7 @@ public class Candidato {
 
     public Candidato(){}
 
-    public String getDbUsername(FirebaseFirestore db){
+    /*public String getDbUsername(FirebaseFirestore db){
 
         db.collection("email")
                 .get()
@@ -129,5 +123,5 @@ public class Candidato {
         }
 
         return "wip";
-    }
+    }*/
 }
