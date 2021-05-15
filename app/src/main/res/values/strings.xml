@@ -4,5 +4,6 @@
     <string name="password_txt">Password</string>
     <string name="login_btn">Log In</string>
     <string name="sign_in_btn">Sign In</string>
+    <string name="add">+</string>
     <string name="sign_up_txt"><a href="http://www.infojobs.com">Sing Up</a></string>
 </resources>
