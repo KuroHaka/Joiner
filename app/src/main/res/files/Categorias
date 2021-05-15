@@ -1,0 +1,2034 @@
+[
+  {
+    "id": 13,
+    "name": "Idiomas",
+    "order": 13,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1301,
+        "name": "Dominio de idiomas",
+        "order": 1301,
+        "parentCategoryId": 13,
+        "subcategories": []
+      },
+      {
+        "id": 1302,
+        "name": "Traducción e interpretación",
+        "order": 1302,
+        "parentCategoryId": 13,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Agrario y alimentario",
+    "order": 1,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 101,
+        "name": "Administración de empresas agropecuarias",
+        "order": 101,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 102,
+        "name": "Administración de recursos naturales ",
+        "order": 102,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 103,
+        "name": "Cultivo y producción agrícola",
+        "order": 103,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 104,
+        "name": "Distribución de productos pesqueros",
+        "order": 104,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 105,
+        "name": "Distribución y venta de alimentos",
+        "order": 105,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 106,
+        "name": "Elaboración artesanal de alimentos",
+        "order": 106,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 107,
+        "name": "Elaboración de aceites",
+        "order": 107,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 108,
+        "name": "Elaboración de productos cárnicos",
+        "order": 108,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 109,
+        "name": "Elaboración de productos lácteos",
+        "order": 109,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 110,
+        "name": "Elaboración de vinos y licores",
+        "order": 110,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 111,
+        "name": "Elaboración industrial de alimentos y bebidas",
+        "order": 111,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 112,
+        "name": "Ganadería",
+        "order": 112,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 113,
+        "name": "Hortofruticultura",
+        "order": 113,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 114,
+        "name": "Ingeniería agrónoma",
+        "order": 114,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 115,
+        "name": "Ingeniería forestal y de montes",
+        "order": 115,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 116,
+        "name": "Jardinería",
+        "order": 116,
+        "parentCategoryId": 1,
+        "subcategories": []
+      },
+      {
+        "id": 117,
+        "name": "Mantenimiento forestal",
+        "order": 117,
+        "parentCategoryId": 1,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Calidad, I+D e innovación",
+    "order": 2,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 201,
+        "name": "Auditoría y certificación de calidad",
+        "order": 201,
+        "parentCategoryId": 2,
+        "subcategories": []
+      },
+      {
+        "id": 202,
+        "name": "Calidad medioambiental",
+        "order": 202,
+        "parentCategoryId": 2,
+        "subcategories": []
+      },
+      {
+        "id": 203,
+        "name": "Control de calidad",
+        "order": 203,
+        "parentCategoryId": 2,
+        "subcategories": []
+      },
+      {
+        "id": 204,
+        "name": "Dirección de calidad",
+        "order": 204,
+        "parentCategoryId": 2,
+        "subcategories": []
+      },
+      {
+        "id": 205,
+        "name": "I+D",
+        "order": 205,
+        "parentCategoryId": 2,
+        "subcategories": []
+      },
+      {
+        "id": 206,
+        "name": "Innovación",
+        "order": 206,
+        "parentCategoryId": 2,
+        "subcategories": []
+      },
+      {
+        "id": 207,
+        "name": "Normas de calidad",
+        "order": 207,
+        "parentCategoryId": 2,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Compras, logística y transportes",
+    "order": 3,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 301,
+        "name": "Control aéreo",
+        "order": 301,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 302,
+        "name": "Formación vial",
+        "order": 302,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 303,
+        "name": "Gestión del transporte",
+        "order": 303,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 304,
+        "name": "Gestión y control de compras",
+        "order": 304,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 305,
+        "name": "Gestión y operativa de almacén",
+        "order": 305,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 306,
+        "name": "Instrucción de vuelo",
+        "order": 306,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 307,
+        "name": "Logística de empresa",
+        "order": 307,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 308,
+        "name": "Pilotaje aéreo",
+        "order": 308,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 309,
+        "name": "Transporte en vehículo de mercancías",
+        "order": 309,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 310,
+        "name": "Transporte en vehículo de pasajeros",
+        "order": 310,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 311,
+        "name": "Transporte ferroviario",
+        "order": 311,
+        "parentCategoryId": 3,
+        "subcategories": []
+      },
+      {
+        "id": 312,
+        "name": "Tripulación y seguridad aeronáutica",
+        "order": 312,
+        "parentCategoryId": 3,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Comunicación y audiovisual",
+    "order": 4,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 401,
+        "name": "Cámara",
+        "order": 401,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 402,
+        "name": "Fotografía ",
+        "order": 402,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 403,
+        "name": "Organización de eventos",
+        "order": 403,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 404,
+        "name": "Periodismo",
+        "order": 404,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 405,
+        "name": "Producción audiovisual",
+        "order": 405,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 406,
+        "name": "Publicidad",
+        "order": 406,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 407,
+        "name": "Relaciones públicas y protocolo",
+        "order": 407,
+        "parentCategoryId": 4,
+        "subcategories": []
+      },
+      {
+        "id": 408,
+        "name": "Sonido",
+        "order": 408,
+        "parentCategoryId": 4,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Deporte y ocio",
+    "order": 5,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 501,
+        "name": "Actividades deportivas",
+        "order": 501,
+        "parentCategoryId": 5,
+        "subcategories": []
+      },
+      {
+        "id": 502,
+        "name": "Actividades recreativas en el medio natural",
+        "order": 502,
+        "parentCategoryId": 5,
+        "subcategories": []
+      },
+      {
+        "id": 503,
+        "name": "Deporte profesional",
+        "order": 503,
+        "parentCategoryId": 5,
+        "subcategories": []
+      },
+      {
+        "id": 504,
+        "name": "Ocio",
+        "order": 504,
+        "parentCategoryId": 5,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Derecho y justicia",
+    "order": 6,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 601,
+        "name": "Actividad judicial",
+        "order": 601,
+        "parentCategoryId": 6,
+        "subcategories": []
+      },
+      {
+        "id": 602,
+        "name": "Derecho",
+        "order": 602,
+        "parentCategoryId": 6,
+        "subcategories": []
+      },
+      {
+        "id": 603,
+        "name": "Derecho penal",
+        "order": 603,
+        "parentCategoryId": 6,
+        "subcategories": []
+      },
+      {
+        "id": 604,
+        "name": "Gestión notarial",
+        "order": 604,
+        "parentCategoryId": 6,
+        "subcategories": []
+      },
+      {
+        "id": 605,
+        "name": "Órganos judiciales",
+        "order": 605,
+        "parentCategoryId": 6,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Dirección y administración",
+    "order": 7,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 701,
+        "name": "Administración de oficina",
+        "order": 701,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 702,
+        "name": "Áreas de la administración pública",
+        "order": 702,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 703,
+        "name": "Dirección de organización",
+        "order": 703,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 704,
+        "name": "Dirección internacional de empresas",
+        "order": 704,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 705,
+        "name": "Dirección y gerencia",
+        "order": 705,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 706,
+        "name": "Funciones en la administración pública",
+        "order": 706,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 707,
+        "name": "Niveles de la administración pública",
+        "order": 707,
+        "parentCategoryId": 7,
+        "subcategories": []
+      },
+      {
+        "id": 708,
+        "name": "Secretariado de dirección",
+        "order": 708,
+        "parentCategoryId": 7,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Diseño y artes gráficas",
+    "order": 8,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 801,
+        "name": "Alfarería, cerámica y vidrio",
+        "order": 801,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 802,
+        "name": "Artes del libro",
+        "order": 802,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 803,
+        "name": "Creación plástica",
+        "order": 803,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 804,
+        "name": "Diseño gráfico",
+        "order": 804,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 805,
+        "name": "Ilustración gráfica",
+        "order": 805,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 806,
+        "name": "Impresión",
+        "order": 806,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 807,
+        "name": "Joyería y orfebrería",
+        "order": 807,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 808,
+        "name": "Producción editorial",
+        "order": 808,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 809,
+        "name": "Reprografía",
+        "order": 809,
+        "parentCategoryId": 8,
+        "subcategories": []
+      },
+      {
+        "id": 810,
+        "name": "Técnicas plásticas",
+        "order": 810,
+        "parentCategoryId": 8,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Electricidad, electrónica, mecánica",
+    "order": 9,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 901,
+        "name": "Carrocería y chapa",
+        "order": 901,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 902,
+        "name": "Electricidad en la construcción",
+        "order": 902,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 903,
+        "name": "Electricidad industrial",
+        "order": 903,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 904,
+        "name": "Electricidad y electrónica de vehículos",
+        "order": 904,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 905,
+        "name": "Electromecánica naval",
+        "order": 905,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 906,
+        "name": "Electrónica de consumo",
+        "order": 906,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 907,
+        "name": "Electrónica industrial",
+        "order": 907,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 908,
+        "name": "Gestión de taller de vehículos",
+        "order": 908,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 909,
+        "name": "Mantenimiento aeronáutico",
+        "order": 909,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 910,
+        "name": "Mecánica de vehículos",
+        "order": 910,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 911,
+        "name": "Mecánica naval",
+        "order": 911,
+        "parentCategoryId": 9,
+        "subcategories": []
+      },
+      {
+        "id": 912,
+        "name": "Reparación de electrodomésticos",
+        "order": 912,
+        "parentCategoryId": 9,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Finanzas y contabilidad",
+    "order": 10,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1001,
+        "name": "Administración contable",
+        "order": 1001,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1002,
+        "name": "Administración fiscal",
+        "order": 1002,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1003,
+        "name": "Administración y operativa bancaria",
+        "order": 1003,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1004,
+        "name": "Asesoría contable",
+        "order": 1004,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1005,
+        "name": "Asesoría fiscal",
+        "order": 1005,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1006,
+        "name": "Auditoría financiera",
+        "order": 1006,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1007,
+        "name": "Consultoría financiera",
+        "order": 1007,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1008,
+        "name": "Control de facturación",
+        "order": 1008,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1009,
+        "name": "Control de precios",
+        "order": 1009,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1010,
+        "name": "Dirección de auditorías de empresa",
+        "order": 1010,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1011,
+        "name": "Dirección financiera",
+        "order": 1011,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1012,
+        "name": "Mercados financieros",
+        "order": 1012,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1013,
+        "name": "Seguros",
+        "order": 1013,
+        "parentCategoryId": 10,
+        "subcategories": []
+      },
+      {
+        "id": 1014,
+        "name": "Tesorería y financiación",
+        "order": 1014,
+        "parentCategoryId": 10,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Hostelería, turismo y hogar",
+    "order": 11,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1101,
+        "name": "Cocina y gastronomía",
+        "order": 1101,
+        "parentCategoryId": 11,
+        "subcategories": []
+      },
+      {
+        "id": 1102,
+        "name": "Gestión de hostelería",
+        "order": 1102,
+        "parentCategoryId": 11,
+        "subcategories": []
+      },
+      {
+        "id": 1103,
+        "name": "Gestión y distribución turística",
+        "order": 1103,
+        "parentCategoryId": 11,
+        "subcategories": []
+      },
+      {
+        "id": 1104,
+        "name": "Información y animación turística",
+        "order": 1104,
+        "parentCategoryId": 11,
+        "subcategories": []
+      },
+      {
+        "id": 1105,
+        "name": "Lavandería, tintorería y plancha",
+        "order": 1105,
+        "parentCategoryId": 11,
+        "subcategories": []
+      },
+      {
+        "id": 1106,
+        "name": "Servicio doméstico",
+        "order": 1106,
+        "parentCategoryId": 11,
+        "subcategories": []
+      },
+      {
+        "id": 1107,
+        "name": "Servicios en hostelería y restauración",
+        "order": 1107,
+        "parentCategoryId": 11,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Humanidades y actividades socioculturales",
+    "order": 12,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1201,
+        "name": "Biblioteconomía y documentalismo",
+        "order": 1201,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1202,
+        "name": "Creación literaria",
+        "order": 1202,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1203,
+        "name": "Educación y actividades infantiles",
+        "order": 1203,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1204,
+        "name": "Educación y trabajo social",
+        "order": 1204,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1205,
+        "name": "Gestión cultural y museística",
+        "order": 1205,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1206,
+        "name": "Historia y arqueología",
+        "order": 1206,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1207,
+        "name": "ONG y cooperación",
+        "order": 1207,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1208,
+        "name": "Psicopedagogía",
+        "order": 1208,
+        "parentCategoryId": 12,
+        "subcategories": []
+      },
+      {
+        "id": 1209,
+        "name": "Sociología",
+        "order": 1209,
+        "parentCategoryId": 12,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Informática y telecomunicaciones",
+    "order": 14,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1401,
+        "name": "Administración de sistemas",
+        "order": 1401,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1402,
+        "name": "Análisis y gestión de bases de datos",
+        "order": 1402,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1403,
+        "name": "Análisis y programación",
+        "order": 1403,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1404,
+        "name": "Aplicaciones y servidores de mensajería",
+        "order": 1404,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1405,
+        "name": "Arquitectura y diseño de hardware",
+        "order": 1405,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1406,
+        "name": "Business inteligence",
+        "order": 1406,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1407,
+        "name": "Calidad del software",
+        "order": 1407,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1408,
+        "name": "Consultoría de sistemas",
+        "order": 1408,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1409,
+        "name": "Consultoría y desarrollo ERP",
+        "order": 1409,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1410,
+        "name": "Desarrollo de firmware",
+        "order": 1410,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1411,
+        "name": "Desarrollo multimedia",
+        "order": 1411,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1412,
+        "name": "Dirección técnica de sistemas de información",
+        "order": 1412,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1413,
+        "name": "Dirección y gestión de telecomunicaciones",
+        "order": 1413,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1414,
+        "name": "Diseño web",
+        "order": 1414,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1415,
+        "name": "Estándares y protocolos de redes",
+        "order": 1415,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1416,
+        "name": "Estándares y tecnologías de hardware",
+        "order": 1416,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1417,
+        "name": "Estándares y tecnologías de telecomunicación",
+        "order": 1417,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1418,
+        "name": "Gestión de contenidos",
+        "order": 1418,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1419,
+        "name": "Gestión de proyectos informáticos",
+        "order": 1419,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1420,
+        "name": "Gestión de redes",
+        "order": 1420,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1421,
+        "name": "Gestión de servicios informáticos",
+        "order": 1421,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1422,
+        "name": "Gestion documental, ECM, Imaging??",
+        "order": 1422,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1423,
+        "name": "Gestión documental, ECM, Imaging??",
+        "order": 1423,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1424,
+        "name": "Groupware, workflow, BPM",
+        "order": 1424,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1425,
+        "name": "Herramientas de desarrollo",
+        "order": 1425,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1426,
+        "name": "Herramientas de diseño web y multimedia",
+        "order": 1426,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1427,
+        "name": "Herramientas ERP y business inteligence",
+        "order": 1427,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1428,
+        "name": "Informática sectorial",
+        "order": 1428,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1429,
+        "name": "Ingeniería de telecomunicaciones",
+        "order": 1429,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1430,
+        "name": "Instalación de telecomunicaciones",
+        "order": 1430,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1431,
+        "name": "Lenguajes de programación",
+        "order": 1431,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1432,
+        "name": "Métodos, estándares y API",
+        "order": 1432,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1433,
+        "name": "Ofimática",
+        "order": 1433,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1434,
+        "name": "Otros programas",
+        "order": 1434,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1435,
+        "name": "Plataformas hardware",
+        "order": 1435,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1436,
+        "name": "Seguridad informática",
+        "order": 1436,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1437,
+        "name": "Sistemas operativos",
+        "order": 1437,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1438,
+        "name": "Soporte a usuarios y helpdesk",
+        "order": 1438,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1439,
+        "name": "Tecnologías de bases de datos",
+        "order": 1439,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1440,
+        "name": "Tecnologías de redes",
+        "order": 1440,
+        "parentCategoryId": 14,
+        "subcategories": []
+      },
+      {
+        "id": 1441,
+        "name": "Venta de informática y telecomunicaciones",
+        "order": 1441,
+        "parentCategoryId": 14,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Ingenierías e industria",
+    "order": 15,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1501,
+        "name": "Biotecnología",
+        "order": 1501,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1502,
+        "name": "Climatización y frío industrial",
+        "order": 1502,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1503,
+        "name": "Control de producción",
+        "order": 1503,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1504,
+        "name": "Dirección de producción",
+        "order": 1504,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1505,
+        "name": "Diseño y mecanizado de piezas",
+        "order": 1505,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1506,
+        "name": "Fabricación de madera y mueble",
+        "order": 1506,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1507,
+        "name": "Fabricación de papel",
+        "order": 1507,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1508,
+        "name": "Fabricación farmacéutica",
+        "order": 1508,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1509,
+        "name": "Gestión de proyectos industriales",
+        "order": 1509,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1510,
+        "name": "Gestión y distribución de agua",
+        "order": 1510,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1511,
+        "name": "Gestión y distribución de gas",
+        "order": 1511,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1512,
+        "name": "Gestión y distribución eléctrica",
+        "order": 1512,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1513,
+        "name": "Ingeniería aeronáutica",
+        "order": 1513,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1514,
+        "name": "Ingeniería de energías renovables",
+        "order": 1514,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1515,
+        "name": "Ingeniería de materiales",
+        "order": 1515,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1516,
+        "name": "Ingeniería de minas",
+        "order": 1516,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1517,
+        "name": "Ingeniería de telecomunicaciones aeronáuticas",
+        "order": 1517,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1518,
+        "name": "Ingeniería industrial",
+        "order": 1518,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1519,
+        "name": "Ingeniería medioambiental",
+        "order": 1519,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1520,
+        "name": "Ingenieria naval",
+        "order": 1520,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1521,
+        "name": "Ingeniería química",
+        "order": 1521,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1522,
+        "name": "Ingeniería y operación de central eléctrica",
+        "order": 1522,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1523,
+        "name": "Mantenimiento de equipos industriales",
+        "order": 1523,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1524,
+        "name": "Operación en planta química",
+        "order": 1524,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1525,
+        "name": "Operaciones en minas",
+        "order": 1525,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1526,
+        "name": "Saneamiento",
+        "order": 1526,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1527,
+        "name": "Soldadura, tubería y caldedería",
+        "order": 1527,
+        "parentCategoryId": 15,
+        "subcategories": []
+      },
+      {
+        "id": 1528,
+        "name": "Vidrio y cerámica industrial",
+        "order": 1528,
+        "parentCategoryId": 15,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Inmobiliario y construcción",
+    "order": 16,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1601,
+        "name": "Administración de fincas",
+        "order": 1601,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1602,
+        "name": "Albañilería",
+        "order": 1602,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1603,
+        "name": "Arquitectura y urbanismo",
+        "order": 1603,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1604,
+        "name": "Carpintería metálica y metalistería",
+        "order": 1604,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1605,
+        "name": "Carpintería y ebanistería",
+        "order": 1605,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1606,
+        "name": "Contratación de obras",
+        "order": 1606,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1607,
+        "name": "Control y ejecución de obra",
+        "order": 1607,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1608,
+        "name": "Fontanería",
+        "order": 1608,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1609,
+        "name": "Geología",
+        "order": 1609,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1610,
+        "name": "Ingeniería de construcción ",
+        "order": 1610,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1611,
+        "name": "Ingeniería de infraestructuras",
+        "order": 1611,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1612,
+        "name": "Interiorismo",
+        "order": 1612,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1613,
+        "name": "Manejo de máquinas de construcción",
+        "order": 1613,
+        "parentCategoryId": 16,
+        "subcategories": []
+      },
+      {
+        "id": 1614,
+        "name": "Promoción inmobiliaria",
+        "order": 1614,
+        "parentCategoryId": 16,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Marketing y ventas",
+    "order": 17,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1701,
+        "name": "Comercio y venta al detalle",
+        "order": 1701,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1702,
+        "name": "Comunicación de empresa",
+        "order": 1702,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1703,
+        "name": "Dirección comercial",
+        "order": 1703,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1704,
+        "name": "Dirección de comunicación",
+        "order": 1704,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1705,
+        "name": "Dirección de marketing",
+        "order": 1705,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1706,
+        "name": "Distribución comercial",
+        "order": 1706,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1707,
+        "name": "e-business",
+        "order": 1707,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1708,
+        "name": "Exportación e importación",
+        "order": 1708,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1709,
+        "name": "Venta por productos y servicios",
+        "order": 1709,
+        "parentCategoryId": 17,
+        "subcategories": []
+      },
+      {
+        "id": 1710,
+        "name": "Venta y representación comercial",
+        "order": 1710,
+        "parentCategoryId": 17,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Música, teatro y danza",
+    "order": 18,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1801,
+        "name": "Artes dramáticas",
+        "order": 1801,
+        "parentCategoryId": 18,
+        "subcategories": []
+      },
+      {
+        "id": 1802,
+        "name": "Danza y baile",
+        "order": 1802,
+        "parentCategoryId": 18,
+        "subcategories": []
+      },
+      {
+        "id": 1803,
+        "name": "Estilos musicales",
+        "order": 1803,
+        "parentCategoryId": 18,
+        "subcategories": []
+      },
+      {
+        "id": 1804,
+        "name": "Gestión de actividades escénicas",
+        "order": 1804,
+        "parentCategoryId": 18,
+        "subcategories": []
+      },
+      {
+        "id": 1805,
+        "name": "Instrumentos musicales",
+        "order": 1805,
+        "parentCategoryId": 18,
+        "subcategories": []
+      },
+      {
+        "id": 1806,
+        "name": "Maquillaje, vestuario y caracterización",
+        "order": 1806,
+        "parentCategoryId": 18,
+        "subcategories": []
+      },
+      {
+        "id": 1807,
+        "name": "Técnica musical",
+        "order": 1807,
+        "parentCategoryId": 18,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Naval y pesquero",
+    "order": 19,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 1901,
+        "name": "Actividad de armador",
+        "order": 1901,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1902,
+        "name": "Buceo",
+        "order": 1902,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1903,
+        "name": "Control marítimo",
+        "order": 1903,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1904,
+        "name": "Estiba",
+        "order": 1904,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1905,
+        "name": "Maquinaria naval",
+        "order": 1905,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1906,
+        "name": "Marineria de transporte marítimo",
+        "order": 1906,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1907,
+        "name": "Marinería de transporte marítimo",
+        "order": 1907,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1908,
+        "name": "Patronaje de pesca",
+        "order": 1908,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1909,
+        "name": "Patronaje náutico",
+        "order": 1909,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1910,
+        "name": "Pesca y marisqueo",
+        "order": 1910,
+        "parentCategoryId": 19,
+        "subcategories": []
+      },
+      {
+        "id": 1911,
+        "name": "Piscicultura",
+        "order": 1911,
+        "parentCategoryId": 19,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "RRHH y formación",
+    "order": 20,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 2001,
+        "name": "Consultoría en RRHH",
+        "order": 2001,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2002,
+        "name": "Dirección de RRHH",
+        "order": 2002,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2003,
+        "name": "Dirección y gestión de la formación",
+        "order": 2003,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2004,
+        "name": "Docencia",
+        "order": 2004,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2005,
+        "name": "Docencia de idiomas",
+        "order": 2005,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2006,
+        "name": "Formación y docencia",
+        "order": 2006,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2007,
+        "name": "Inserción laboral",
+        "order": 2007,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2008,
+        "name": "Prevención de riesgos",
+        "order": 2008,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2009,
+        "name": "Relaciones laborales",
+        "order": 2009,
+        "parentCategoryId": 20,
+        "subcategories": []
+      },
+      {
+        "id": 2010,
+        "name": "Selección de personal",
+        "order": 2010,
+        "parentCategoryId": 20,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Sanidad y salud",
+    "order": 21,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 2101,
+        "name": "Auxiliares y profesiones sanitarias",
+        "order": 2101,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2102,
+        "name": "Cirugía estética",
+        "order": 2102,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2103,
+        "name": "Diagnóstico biomédico",
+        "order": 2103,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2104,
+        "name": "Diagnóstico por la imagen",
+        "order": 2104,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2105,
+        "name": "Enfermería",
+        "order": 2105,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2106,
+        "name": "Especialidades médicas",
+        "order": 2106,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2107,
+        "name": "Gestión sanitaria",
+        "order": 2107,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2108,
+        "name": "Investigación médica",
+        "order": 2108,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2109,
+        "name": "Medicina estética",
+        "order": 2109,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2110,
+        "name": "Medicina y psicología deportiva",
+        "order": 2110,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2111,
+        "name": "Medicinas complementarias",
+        "order": 2111,
+        "parentCategoryId": 21,
+        "subcategories": []
+      },
+      {
+        "id": 2112,
+        "name": "Ventas y marketing sanitario",
+        "order": 2112,
+        "parentCategoryId": 21,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Seguridad y ejército",
+    "order": 22,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 2201,
+        "name": "Armada",
+        "order": 2201,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2202,
+        "name": "Ejército de tierra",
+        "order": 2202,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2203,
+        "name": "Escalas militares",
+        "order": 2203,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2204,
+        "name": "Fuerzas aéreas",
+        "order": 2204,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2205,
+        "name": "Guardia Civil",
+        "order": 2205,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2206,
+        "name": "Investigación y criminología",
+        "order": 2206,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2207,
+        "name": "Policía",
+        "order": 2207,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2208,
+        "name": "Salvamento y socorrismo",
+        "order": 2208,
+        "parentCategoryId": 22,
+        "subcategories": []
+      },
+      {
+        "id": 2209,
+        "name": "Vigilancia y protección",
+        "order": 2209,
+        "parentCategoryId": 22,
+        "subcategories": []
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Textil, moda y estética",
+    "order": 23,
+    "parentCategoryId": 0,
+    "subcategories": [
+      {
+        "id": 2301,
+        "name": "Calzado y curtido",
+        "order": 2301,
+        "parentCategoryId": 23,
+        "subcategories": []
+      },
+      {
+        "id": 2302,
+        "name": "Diseño textil y moda",
+        "order": 2302,
+        "parentCategoryId": 23,
+        "subcategories": []
+      },
+      {
+        "id": 2303,
+        "name": "Estética personal",
+        "order": 2303,
+        "parentCategoryId": 23,
+        "subcategories": []
+      },
+      {
+        "id": 2304,
+        "name": "Fabricación textil",
+        "order": 2304,
+        "parentCategoryId": 23,
+        "subcategories": []
+      },
+      {
+        "id": 2305,
+        "name": "Masaje",
+        "order": 2305,
+        "parentCategoryId": 23,
+        "subcategories": []
+      },
+      {
+        "id": 2306,
+        "name": "Moda y modelos",
+        "order": 2306,
+        "parentCategoryId": 23,
+        "subcategories": []
+      },
+      {
+        "id": 2307,
+        "name": "Peluquería",
+        "order": 2307,
+        "parentCategoryId": 23,
+        "subcategories": []
+      }
+    ]
+  }
+]
