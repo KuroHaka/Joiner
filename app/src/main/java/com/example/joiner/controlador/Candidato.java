@@ -1,8 +1,22 @@
 package com.example.joiner.controlador;
 
 import android.location.Location;
+import android.util.Log;
+
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Map;
+
+import static android.content.ContentValues.TAG;
 
 public class Candidato {
     private String nombre;
@@ -72,6 +86,8 @@ public class Candidato {
     }
 
     public ArrayList<Tag> getTags() {
+        Collections.sort(tags, new TagComparator());
+        Collections.reverse(tags);
         return tags;
     }
 
@@ -85,5 +101,33 @@ public class Candidato {
 
     public void setHabilidades(ArrayList<Habilidad> habilidades) {
         this.habilidades = habilidades;
+    }
+
+    private Map<String, Object> email;
+
+    public Candidato(){}
+
+    public String getDbUsername(FirebaseFirestore db){
+
+        db.collection("email")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                email = document.getData();
+
+                            }
+                        } else {
+                            Log.w(TAG, "Error getting documents.", task.getException());
+                        }
+                    }
+                });
+        for (Object o : email.values()) {
+            System.out.println((String) o);
+        }
+
+        return "wip";
     }
 }

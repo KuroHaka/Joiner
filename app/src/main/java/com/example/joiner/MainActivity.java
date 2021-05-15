@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.joiner.controlador.Candidato;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class MainActivity extends AppCompatActivity {
     private Button but;
     @Override
@@ -14,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.startup_page);
-
-
         but = findViewById(R.id.initial_login_button);
         but.setOnClickListener(new View.OnClickListener() {
             @Override
