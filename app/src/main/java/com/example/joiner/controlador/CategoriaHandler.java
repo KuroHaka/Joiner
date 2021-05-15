@@ -54,6 +54,9 @@ public class CategoriaHandler {
     public Categoria get(int index){
         return categorias.get(index);
     }
+    public Categoria getById(int id){
+        return categorias.get(categorias.indexOf(new Categoria(id, "searcher")));
+    }
 
     private String archivoAString(String archivo) throws Exception{
         return new String(Files.readAllBytes(Paths.get(archivo)));

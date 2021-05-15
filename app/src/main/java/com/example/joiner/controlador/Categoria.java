@@ -1,6 +1,7 @@
 package com.example.joiner.controlador;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Categoria {
     private int id;
@@ -35,5 +36,18 @@ public class Categoria {
         this.id = id;
         this.name = name;
         subcategorias = new ArrayList<>();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Categoria categoria = (Categoria) o;
+        return id == categoria.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

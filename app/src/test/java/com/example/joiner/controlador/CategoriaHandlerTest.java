@@ -20,4 +20,15 @@ public class CategoriaHandlerTest {
         CategoriaHandler handler = new CategoriaHandler();
         assertTrue(handler.inicializar());
     }
+
+    @Test
+    public void test_buscar(){
+        CategoriaHandler handler = new CategoriaHandler();
+        handler.inicializar();
+        Categoria base = new Categoria(1, "test");
+        Categoria busqueda = handler.getById(1);
+        assertEquals(base, busqueda);
+    }
+
+
 }
