@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Formacion {
     private String tipo;
     private String nombre;
-    private ArrayList<Centro> centros;
 
     public String getTipo() {
         return tipo;
@@ -21,13 +20,5 @@ public class Formacion {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public ArrayList<Centro> getCentros() {
-        return centros;
-    }
-
-    public void setCentros(ArrayList<Centro> centros) {
-        this.centros = centros;
     }
 }
