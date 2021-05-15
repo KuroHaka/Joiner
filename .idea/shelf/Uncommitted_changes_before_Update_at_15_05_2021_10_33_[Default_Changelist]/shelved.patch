@@ -1,0 +1,137 @@
+Index: app/src/main/java/com/example/joiner/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.joiner;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.graphics.Color;\r\nimport android.os.Bundle;\r\nimport android.text.Spannable;\r\nimport android.text.SpannableString;\r\nimport android.text.style.ForegroundColorSpan;\r\nimport android.widget.TextView;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n\r\n        setContentView(R.layout.login_page);\r\n        TextView tV = findViewById(R.id.sign_up_txt);\r\n        String s_up_txt = \"Sign Up\";\r\n        SpannableString ss = new SpannableString(s_up_txt);\r\n        ss.setSpan(new ForegroundColorSpan(Color.BLUE),\r\n                1,\r\n                7,\r\n                Spannable.SPAN_EXCLUSIVE_INCLUSIVE);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/joiner/MainActivity.java	(revision 18debff4a09b1fb98cd86624a52cad1ee6c66266)
++++ app/src/main/java/com/example/joiner/MainActivity.java	(date 1621066686391)
+@@ -15,13 +15,12 @@
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+ 
+-        setContentView(R.layout.login_page);
+-        TextView tV = findViewById(R.id.sign_up_txt);
++        setContentView(R.layout.startup_page);
++
++        /*TextView tV = findViewById(R.id.sign_up_txt);
+         String s_up_txt = "Sign Up";
+         SpannableString ss = new SpannableString(s_up_txt);
+-        ss.setSpan(new ForegroundColorSpan(Color.BLUE),
+-                1,
+-                7,
+-                Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
++        ss.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 7, Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
++        tV.setText(ss);*/
+     }
+ }
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Joiner</string>\r\n    <string name=\"email_txt\">Email</string>\r\n    <string name=\"password_txt\">Password</string>\r\n    <string name=\"sign_in_btn\">Sign In</string>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 18debff4a09b1fb98cd86624a52cad1ee6c66266)
++++ app/src/main/res/values/strings.xml	(date 1621066384933)
+@@ -3,4 +3,5 @@
+     <string name="email_txt">Email</string>
+     <string name="password_txt">Password</string>
+     <string name="sign_in_btn">Sign In</string>
++    <string name="sign_up_txt"><a href="http://www.infojobs.com">Sing Up</a></string>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/Post.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:paddingLeft=\"0dp\"\r\n    android:paddingRight=\"0dp\"\r\n    android:orientation=\"vertical\" >\r\n    <ImageView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"200dp\"\r\n        android:layout_gravity=\"top\"\r\n        android:\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/Post.xml	(revision 18debff4a09b1fb98cd86624a52cad1ee6c66266)
++++ app/src/main/res/layout/Post.xml	(date 1621064579827)
+@@ -1,13 +1,18 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:layout_width="match_parent"
++<RelativeLayout
++    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    android:paddingLeft="0dp"
+-    android:paddingRight="0dp"
+-    android:orientation="vertical" >
+-    <ImageView
++    android:background="@color/colorAccent">
++
++    <android.support.v4.view.ViewPager
++        android:foregroundGravity="center"
++        android:id="@+id/viewPager"
++        android:layout_centerInParent="true"
++        android:overScrollMode="never"
++        android:clipToPadding="false"
+         android:layout_width="match_parent"
+-        android:layout_height="200dp"
+-        android:layout_gravity="top"
+-        android:
+-</LinearLayout>
+\ No newline at end of file
++        android:layout_height="match_parent">
++    </android.support.v4.view.ViewPager>
++
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/login_page.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\">\r\n\r\n    <EditText\r\n        android:id=\"@+id/email\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"99dp\"\r\n        android:layout_marginEnd=\"103dp\"\r\n        android:layout_marginBottom=\"32dp\"\r\n        android:ems=\"10\"\r\n        android:hint=\"@string/email_txt\"\r\n        android:inputType=\"textEmailAddress\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/password\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        tools:ignore=\"Autofill\"\r\n        />\r\n\r\n    <EditText\r\n        android:id=\"@+id/password\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"98dp\"\r\n        android:layout_marginEnd=\"103dp\"\r\n        android:layout_marginBottom=\"308dp\"\r\n        android:ems=\"10\"\r\n        android:hint=\"@string/password_txt\"\r\n        android:inputType=\"textPassword\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        tools:ignore=\"Autofill\"\r\n        />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/infojobs_logo\"\r\n        android:layout_width=\"154dp\"\r\n        android:layout_height=\"39dp\"\r\n        android:layout_marginStart=\"128dp\"\r\n        android:layout_marginEnd=\"129dp\"\r\n        android:layout_marginBottom=\"122dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:srcCompat=\"@drawable/descarga\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/sign_in_btn\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"151dp\"\r\n        android:layout_marginTop=\"43dp\"\r\n        android:layout_marginEnd=\"172dp\"\r\n        android:layout_marginBottom=\"57dp\"\r\n        android:text=\"@string/sign_in_btn\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/infojobs_logo\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"1.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/password\"\r\n        app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/jr_logo\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"151dp\"\r\n        android:layout_marginTop=\"106dp\"\r\n        android:layout_marginEnd=\"152dp\"\r\n        android:layout_marginBottom=\"87dp\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/email\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.0\"\r\n        app:srcCompat=\"@drawable/jobr_launcher_foreground\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/sign_up_txt\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"103dp\"\r\n        android:layout_marginEnd=\"260dp\"\r\n        android:layout_marginBottom=\"129dp\"\r\n        android:text=\"Sign Up\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/infojobs_logo\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/password\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/login_page.xml	(revision 18debff4a09b1fb98cd86624a52cad1ee6c66266)
++++ app/src/main/res/layout/login_page.xml	(date 1621066489010)
+@@ -4,6 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
++    android:orientation="vertical">
+ 
+     <EditText
+         android:id="@+id/email"
+@@ -40,7 +41,7 @@
+ 
+     <ImageView
+         android:id="@+id/infojobs_logo"
+-        android:layout_width="154dp"
++        android:layout_width="match_parent"
+         android:layout_height="39dp"
+         android:layout_marginStart="128dp"
+         android:layout_marginEnd="129dp"
+@@ -84,14 +85,16 @@
+ 
+     <TextView
+         android:id="@+id/sign_up_txt"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="103dp"
+-        android:layout_marginEnd="260dp"
+-        android:layout_marginBottom="129dp"
+-        android:text="Sign Up"
+-        app:layout_constraintBottom_toTopOf="@+id/infojobs_logo"
++        android:layout_width="77dp"
++        android:layout_height="19dp"
++        android:layout_marginStart="96dp"
++        android:layout_marginEnd="238dp"
++        android:text="@string/sign_up_txt"
++        android:autoLink="all"
++        android:visibility="visible"
++        app:layout_constraintBottom_toTopOf="@+id/sign_in_btn"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/password" />
++        app:layout_constraintTop_toBottomOf="@+id/password"
++        app:layout_constraintVertical_bias="0.625" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
