@@ -3,7 +3,7 @@ package com.example.joiner.controlador;
 import java.util.ArrayList;
 
 public class Categoria {
-    private String id;
+    private int id;
     private String name;
     private ArrayList<Categoria> subcategorias;
 
@@ -15,11 +15,11 @@ public class Categoria {
         this.name = name;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -31,8 +31,9 @@ public class Categoria {
         this.subcategorias = subcategorias;
     }
 
-    public Categoria(String id, String name){
+    public Categoria(int id, String name){
         this.id = id;
         this.name = name;
+        subcategorias = new ArrayList<>();
     }
 }

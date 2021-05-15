@@ -11,6 +11,7 @@ public class CategoriaHandler {
     private JSONArray categsJson;
 
     public CategoriaHandler(){
+        categorias = new ArrayList<>();
         try{
             categsJson = new JSONArray(archivoAString("src/main/files/Categorias"));
         }catch (Exception ignored){
@@ -19,23 +20,25 @@ public class CategoriaHandler {
     }
 
     public boolean inicializar() {
-        String id, name;
+        int id;
+        String name;
         JSONArray subcategsJson;
         Categoria categ;
         for (int i = 0; i < categsJson.length(); i++) { //recorrer categorías
             try {
-                id = categsJson.getJSONObject(i).getString("id");
+                id = categsJson.getJSONObject(i).getInt("id");
                 name = categsJson.getJSONObject(i).getString("name");
                 subcategsJson = categsJson.getJSONObject(i).getJSONArray("subcategories");
             } catch (org.json.JSONException e) {
+                System.out.println(e);
                 return false;
             }
             categ = new Categoria(id, name);
 
             for (int j = 0; j < subcategsJson.length(); j++) { //recorrer subcategorías
                 try {
-                    id = subcategsJson.getJSONObject(j).getString("id");
-                    name = subcategsJson.getJSONObject(j).getString("id");
+                    id = subcategsJson.getJSONObject(j).getInt("id");
+                    name = subcategsJson.getJSONObject(j).getString("name");
                 } catch (org.json.JSONException e) {
                     return false;
                 }
@@ -46,6 +49,10 @@ public class CategoriaHandler {
 
         }
         return true;
+    }
+
+    public Categoria get(int index){
+        return categorias.get(index);
     }
 
     private String archivoAString(String archivo) throws Exception{
