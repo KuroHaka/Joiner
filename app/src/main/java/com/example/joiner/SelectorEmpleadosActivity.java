@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,19 +57,9 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-
                 if (position < (adapter.getCount() -1) && position < (colors.length - 1)) {
-                    viewPager.setBackgroundColor(
-
-                            (Integer) argbEvaluator.evaluate(
-                                    positionOffset,
-                                    colors[position],
-                                    colors[position + 1]
-                            )
-                    );
+                    viewPager.setBackgroundColor((Integer) argbEvaluator.evaluate(positionOffset, colors[position], colors[position + 1]));
                 }
-
                 else {
                     viewPager.setBackgroundColor(colors[colors.length - 1]);
                 }
@@ -75,9 +67,14 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                Intent intent = new Intent(context, SelectorEmpleadosActivity.class);
-                startActivity(intent);
-                finish();
+                if(position == 0){
+                    nextPost();
+                    viewPager.startAnimation(AnimationUtils.loadAnimation(context, R.anim.fadeout));
+                }
+                else if (position == 2){
+                    nextPost();
+                    viewPager.startAnimation(AnimationUtils.loadAnimation(context, R.anim.fadeout));
+                }
             }
 
             @Override
@@ -85,6 +82,17 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void nextPost(){
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                Intent intent = new Intent(context, SelectorEmpleadosActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },500);
     }
 
 
