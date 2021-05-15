@@ -100,7 +100,9 @@ public class Candidato {
 
     private Map<String, Object> email;
 
-    public Candidato(){}
+    public Candidato(String name){
+        this.nombre = name;
+    }
 
     public int getKinness() {
         return kinness;

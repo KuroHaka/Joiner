@@ -8,20 +8,20 @@ public class Algoritmo {
     private Puesto puesto;
 
     public Algoritmo(){
-        candidatos = new ArrayList<>();
-        candidatosAceptados = new ArrayList<>();
+        setCandidatos(new ArrayList<>());
+        setCandidatosAceptados(new ArrayList<>());
     }
 
     /**
      *
      * @return candidato que cumpla condiciones
      */
-    public Candidato getSimilarUser(){
+    //public Candidato getSimilarUser(){
 
-        candidatos
+        //candidatos
 
-        return new Candidato();
-    }
+        //return new Candidato();
+    //}
 
     /**
      * Asigna una puntuación de como de compatible es un candidato con los tags de ese puesto.
@@ -29,10 +29,10 @@ public class Algoritmo {
      * Si la puntuacción del candidato es igual a la del puesto, le da 1 puntos.
      * @return puntuación
      */
-    private void compareTags(Candidato candidato){
+    public void compareTags(Candidato candidato){
         int puntuacion = 0, tempIndex;
         Tag tagTemp;
-        for(Tag tag: puesto.getTags()){
+        for(Tag tag: getPuesto().getTags()){
             tempIndex = candidato.getTags().indexOf(tag);
             if(tempIndex>0){
                 tagTemp = candidato.getTags().get(tempIndex);
@@ -46,16 +46,16 @@ public class Algoritmo {
     /**
      * Hace una media del peso de las tags de todos los candidatos aceptados y reasigna ese peso a las tags del puesto
      */
-    private void addKinTags(Candidato candidato){
+    public void addKinTags(Candidato candidato){
         ArrayList<Tag> tagsCandidato = candidato.getTags();
-        Puesto p = puesto;
-        int divider = candidatosAceptados.size();
-        for(Candidato ca : candidatosAceptados){
+        Puesto p = getPuesto();
+        int divider = getCandidatosAceptados().size();
+        for(Candidato ca : getCandidatosAceptados()){
             for(Tag t : ca.getTags())
             {
-                int index = puesto.getTags().indexOf(t);
+                int index = getPuesto().getTags().indexOf(t);
                 if(index != -1)
-                    puesto.getTags().set(index, t);
+                    getPuesto().getTags().set(index, t);
             }
         }
 
@@ -64,5 +64,29 @@ public class Algoritmo {
             int valuemedia = t.getPeso()/ divider;
             t.setPeso(valuemedia);
         }
+    }
+
+    public ArrayList<Candidato> getCandidatos() {
+        return candidatos;
+    }
+
+    public void setCandidatos(ArrayList<Candidato> candidatos) {
+        this.candidatos = candidatos;
+    }
+
+    public ArrayList<Candidato> getCandidatosAceptados() {
+        return candidatosAceptados;
+    }
+
+    public void setCandidatosAceptados(ArrayList<Candidato> candidatosAceptados) {
+        this.candidatosAceptados = candidatosAceptados;
+    }
+
+    public Puesto getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(Puesto puesto) {
+        this.puesto = puesto;
     }
 }

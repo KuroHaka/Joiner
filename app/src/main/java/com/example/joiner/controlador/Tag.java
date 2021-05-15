@@ -21,6 +21,10 @@ public class Tag {
     public void setPeso(int peso) {
         this.peso = peso;
     }
+    public Tag(String nombre, int peso){
+        this.nombre = nombre;
+        this.peso = peso;
+    }
 
     @Override
     public boolean equals(Object o) {
