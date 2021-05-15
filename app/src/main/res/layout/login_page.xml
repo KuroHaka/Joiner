@@ -13,12 +13,14 @@
         android:layout_marginEnd="103dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/email_txt"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill"
+        />
 
     <EditText
         android:id="@+id/password"
@@ -28,14 +30,16 @@
         android:layout_marginEnd="103dp"
         android:layout_marginBottom="308dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password_txt"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill"
+        />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/infojobs_logo"
         android:layout_width="154dp"
         android:layout_height="39dp"
         android:layout_marginStart="128dp"
@@ -47,15 +51,15 @@
         app:srcCompat="@drawable/descarga" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/sign_in_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="151dp"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="172dp"
         android:layout_marginBottom="57dp"
-        android:text="Sign In"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:text="@string/sign_in_btn"
+        app:layout_constraintBottom_toTopOf="@+id/infojobs_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +67,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/jr_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="151dp"
@@ -86,7 +90,7 @@
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="129dp"
         android:text="Sign Up"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/infojobs_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
