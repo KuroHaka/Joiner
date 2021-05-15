@@ -89,7 +89,6 @@
         android:layout_marginStart="96dp"
         android:layout_marginEnd="238dp"
         android:text="@string/sign_up_txt"
-        android:autoLink="all"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/sign_in_btn"
         app:layout_constraintEnd_toEndOf="parent"
