@@ -16,16 +16,12 @@ import com.example.joiner.controlador.Candidato;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
-    private static FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Button but;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.startup_page);
-
-        Candidato candidato = new Candidato();
-        candidato.getDbUsername(db);
         but = findViewById(R.id.initial_login_button);
         but.setOnClickListener(new View.OnClickListener() {
             @Override
