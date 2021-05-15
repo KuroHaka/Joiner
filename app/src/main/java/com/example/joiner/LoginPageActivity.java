@@ -3,6 +3,7 @@ package com.example.joiner;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
@@ -32,15 +33,14 @@ public class LoginPageActivity extends AppCompatActivity {
         sign_in_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                logintento();
+                login();
             }
         });
 
     }
-    protected void logintento()
-    {
-
+    public void login() {
+        Intent intent = new Intent(this, SelectorEmpleadosActivity.class);
+        startActivity(intent);
     }
-
 
 }
