@@ -6,4 +6,6 @@
     <string name="sign_in_btn">Sign In</string>
     <string name="add">+</string>
     <string name="sign_up_txt"><a href="http://www.infojobs.com">Sing Up</a></string>
+    <string name="uppss_you_found_a_dummie_we_still_have_to_implement_this">Uppss you found a dummie, we still have to implement this</string>
+    <string name="todo">TODO</string>
 </resources>

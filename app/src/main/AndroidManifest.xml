@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".LoginPageActivity"></activity>
         <activity android:name=".SelectorEmpleadosActivity"></activity>
+        <activity android:name=".TodoActivity"></activity>
         <activity android:name=".RRHHActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>

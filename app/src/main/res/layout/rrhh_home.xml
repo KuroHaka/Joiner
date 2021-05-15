@@ -6,13 +6,10 @@
     android:layout_height="match_parent">
 
 
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/pink_icon"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/jobadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        fab:fab_colorNormal="@color/colorPrimary"
-        fab:fab_icon="@drawable/add"
-        fab:fab_colorPressed="@color/cardview_dark_background"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"/>
@@ -21,8 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/colorPrimary"/>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jobrecycle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp" />
 
 </RelativeLayout>

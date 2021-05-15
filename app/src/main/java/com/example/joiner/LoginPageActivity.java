@@ -39,7 +39,7 @@ public class LoginPageActivity extends AppCompatActivity {
 
     }
     public void login() {
-            Intent intent = new Intent(this, SelectorEmpleadosActivity.class);
+            Intent intent = new Intent(this, RRHHActivity.class);
             startActivity(intent);
     }
 
