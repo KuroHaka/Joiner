@@ -1,6 +1,8 @@
 package com.example.joiner;
 
 import android.animation.ArgbEvaluator;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -23,6 +25,7 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
     List<Modelo> models;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
+    Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +75,9 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-
+                Intent intent = new Intent(context, SelectorEmpleadosActivity.class);
+                startActivity(intent);
+                finish();
             }
 
             @Override
