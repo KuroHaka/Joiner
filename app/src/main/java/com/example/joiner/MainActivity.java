@@ -15,13 +15,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.login_page);
-        TextView tV = findViewById(R.id.sign_up_txt);
+        setContentView(R.layout.startup_page);
+
+        /*TextView tV = findViewById(R.id.sign_up_txt);
         String s_up_txt = "Sign Up";
         SpannableString ss = new SpannableString(s_up_txt);
-        ss.setSpan(new ForegroundColorSpan(Color.BLUE),
-                1,
-                7,
-                Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+        ss.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 7, Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+        tV.setText(ss);*/
     }
 }
