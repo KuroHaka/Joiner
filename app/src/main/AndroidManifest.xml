@@ -12,6 +12,7 @@
         <activity android:name=".LoginPageActivity"></activity>
         <activity android:name=".SelectorEmpleadosActivity"></activity>
         <activity android:name=".RRHHActivity"></activity>
+        <activity android:name=".FirebaseTestActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

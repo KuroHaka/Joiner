@@ -22,6 +22,7 @@ public class Candidato {
     private ArrayList<Idioma> idiomas;
     private ArrayList<Tag> tags;
     private ArrayList<Habilidad> habilidades;
+    private int kinness;
 
     public String getNombre() {
         return nombre;
@@ -100,6 +101,14 @@ public class Candidato {
     private Map<String, Object> email;
 
     public Candidato(){}
+
+    public int getKinness() {
+        return kinness;
+    }
+
+    public void setKinness(int kinness) {
+        this.kinness = kinness;
+    }
 
     /*public String getDbUsername(FirebaseFirestore db){
 
