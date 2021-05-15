@@ -9,8 +9,9 @@ public class Algoritmo {
     private Puesto puesto;
 
     public Algoritmo(){
-        setCandidatos(new ArrayList<>());
-        setCandidatosAceptados(new ArrayList<>());
+        candidatos = new ArrayList<>();
+        candidatosAceptados = new ArrayList<>();
+        puesto = new Puesto();
     }
 
     /**
@@ -38,7 +39,7 @@ public class Algoritmo {
         Tag tagTemp;
         for(Tag tag: getPuesto().getTags()){
             tempIndex = candidato.getTags().indexOf(tag);
-            if(tempIndex>0){
+            if(tempIndex>=0){
                 tagTemp = candidato.getTags().get(tempIndex);
                 if(tagTemp.getPeso()>tag.getPeso()) puntuacion+=2;
                 else if(tagTemp.getPeso()==tag.getPeso()) puntuacion++;
@@ -60,6 +61,9 @@ public class Algoritmo {
                 int index = getPuesto().getTags().indexOf(t);
                 if(index != -1)
                     getPuesto().getTags().set(index, t);
+                else{
+                    getPuesto().getTags().add(t);
+                }
             }
         }
 

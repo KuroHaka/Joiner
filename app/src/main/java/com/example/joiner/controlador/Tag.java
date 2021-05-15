@@ -14,7 +14,7 @@ public class Tag {
         this.nombre = nombre;
     }
 
-    public Integer getPeso() {
+    public int getPeso() {
         return peso;
     }
 

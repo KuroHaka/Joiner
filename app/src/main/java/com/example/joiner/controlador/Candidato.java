@@ -20,7 +20,7 @@ public class Candidato {
     private ArrayList<Formacion> formaciones;
     private ArrayList<Categoria> categorias;
     private ArrayList<Tag> tags;
-    private Integer kinness;
+    private int kinness;
 
     public String getNombre() {
         return nombre;
@@ -71,8 +71,10 @@ public class Candidato {
     }
 
     public ArrayList<Tag> getTags() {
+
         Collections.sort(tags, new TagComparator());
         Collections.reverse(tags);
+
         return tags;
     }
 
@@ -84,13 +86,17 @@ public class Candidato {
 
     public Candidato(String name){
         this.nombre = name;
+        formaciones = new ArrayList<>();
+        categorias = new ArrayList<>();
+        tags = new ArrayList<>();
+
     }
 
-    public Integer getKinness() {
+    public int getKinness() {
         return kinness;
     }
 
-    public void setKinness(Integer kinness) {
+    public void setKinness(int kinness) {
         this.kinness = kinness;
     }
 

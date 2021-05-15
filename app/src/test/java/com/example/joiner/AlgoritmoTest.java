@@ -28,21 +28,22 @@ public class AlgoritmoTest {
         for (int i = 0; i < 6; i++) {
             candidatos.add(new Candidato(nomRand()));
             for (int j=0;j<4;j++){
-                candidatos.get(j).getTags().add(new Tag(String.format("%d", r.nextInt(10)), r.nextInt(10)-20));
+                candidatos.get(i).getTags().add(new Tag(String.format("%d", r.nextInt(10)), r.nextInt(10)-10));
             }
         }
 
 
         al.setCandidatosAceptados(candidatos);
+        al.setCandidatos(candidatos);
         al.addKinTags(candidatos.get(3));
-        System.out.printf("");
+        System.out.println(al.getSimilarUser());
         assert(true);
 
     }
 
     private String nomRand(){
         Random r = new Random();
-        return String.format("%s%s%s", (char) r.nextInt(20),(char) r.nextInt(20),(char) r.nextInt(20));//65
+        return String.format("%s%s%s", (char) (r.nextInt(20)+65),(char) (r.nextInt(20)+65),(char) (r.nextInt(20)+65));//65
     }
 
 }
