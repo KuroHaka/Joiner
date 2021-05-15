@@ -26,7 +26,7 @@ public class AlgoritmoTest {
 
 
         for (int i = 0; i < 6; i++) {
-            candidatos.add(new Candidato("Juan"));
+            candidatos.add(new Candidato(nomRand()));
             for (int j=0;j<4;j++){
                 candidatos.get(j).getTags().add(new Tag(String.format("%d", r.nextInt(10)), r.nextInt(10)-20));
             }
@@ -35,8 +35,14 @@ public class AlgoritmoTest {
 
         al.setCandidatosAceptados(candidatos);
         al.addKinTags(candidatos.get(3));
+        System.out.printf("");
         assert(true);
 
+    }
+
+    private String nomRand(){
+        Random r = new Random();
+        return String.format("%s%s%s", (char) r.nextInt(20),(char) r.nextInt(20),(char) r.nextInt(20));//65
     }
 
 }

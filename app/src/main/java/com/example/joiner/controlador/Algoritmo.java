@@ -1,6 +1,7 @@
 package com.example.joiner.controlador;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Algoritmo {
     private ArrayList<Candidato> candidatos;
@@ -16,12 +17,15 @@ public class Algoritmo {
      *
      * @return candidato que cumpla condiciones
      */
-    //public Candidato getSimilarUser(){
+    public Candidato getSimilarUser(){
 
-        //candidatos
-
-        //return new Candidato();
-    //}
+        for(Candidato c: candidatos){
+            compareTags(c);
+        }
+        Collections.sort(candidatos,new CandidatoComparator());
+        Collections.reverse(candidatos);
+        return candidatos.get(0);
+    }
 
     /**
      * Asigna una puntuación de como de compatible es un candidato con los tags de ese puesto.
