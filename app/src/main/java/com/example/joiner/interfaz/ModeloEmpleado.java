@@ -1,21 +1,21 @@
 package com.example.joiner.interfaz;
 
 public class ModeloEmpleado extends Modelo{
-    private int image;
+    private String image;
     private String empleadoName;
     private String desc;
 
-    public ModeloEmpleado(int image, String empleadoName, String desc) {
+    public ModeloEmpleado(String image, String empleadoName, String desc) {
         this.image = image;
         this.empleadoName = empleadoName;
         this.desc = desc;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void login() {
-        Intent intent = new Intent(this, FirebaseTestActivity.class);
+        Intent intent = new Intent(this, LoginPageActivity.class);
         startActivity(intent);
     }
 }

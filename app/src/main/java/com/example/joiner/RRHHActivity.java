@@ -39,7 +39,7 @@ public class RRHHActivity extends AppCompatActivity {
     }
 
     private ArrayList<String> getJobs() {
-        return new ArrayList<>(Arrays.asList("Camarero", "Barista", "Cocinero", "Informático"));
+        return new ArrayList<>(Arrays.asList("Programmer", "Waiter", "Musician", "3D Artist"));
     }
 
     private void addJob(){

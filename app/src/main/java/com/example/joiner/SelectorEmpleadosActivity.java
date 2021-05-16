@@ -14,6 +14,7 @@ import com.example.joiner.interfaz.AdapterEmpleado;
 import com.example.joiner.interfaz.Modelo;
 import com.example.joiner.interfaz.ModeloEmpleado;
 import com.example.joiner.interfaz.ModeloStatus;
+import com.github.javafaker.Faker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +34,10 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
         setContentView(R.layout.post);
 
         models = new ArrayList<>();
+        Faker faker = new Faker();
+        String name = faker.name().fullName();
         models.add(new ModeloStatus(true));
-        models.add(new ModeloEmpleado(R.drawable.fotoperfil, "Xoco", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        models.add(new ModeloEmpleado("https://thispersondoesnotexist.com/image", name, "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
         models.add(new ModeloStatus(false));
 
         adapter = new AdapterEmpleado(models, this);

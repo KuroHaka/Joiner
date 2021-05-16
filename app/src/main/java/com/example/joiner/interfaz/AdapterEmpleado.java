@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.joiner.R;
 
 import java.util.List;
@@ -52,7 +54,10 @@ public class AdapterEmpleado extends PagerAdapter {
             employerName = view.findViewById(R.id.employerName);
             desc = view.findViewById(R.id.desc);
 
-            imageView.setImageResource(me.getImage());
+            Glide.with(context).load(((ModeloEmpleado) models.get(position)).getImage())
+                    .diskCacheStrategy(DiskCacheStrategy.NONE)
+                    .skipMemoryCache(true)
+                    .into(imageView);
             employerName.setText(me.getEmpleadoName());
             desc.setText(me.getDesc());
 
