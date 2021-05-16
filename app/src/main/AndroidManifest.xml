@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.joiner">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/jobr_launcher"
@@ -9,11 +11,13 @@
         android:roundIcon="@mipmap/jobr_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".LoginPageActivity"></activity>
-        <activity android:name=".SelectorEmpleadosActivity"></activity>
-        <activity android:name=".TodoActivity"></activity>
-        <activity android:name=".RRHHActivity"></activity>
-        <activity android:name=".FirebaseTestActivity"></activity>
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".WebViewActivty" />
+        <activity android:name=".LoginPageActivity" />
+        <activity android:name=".SelectorEmpleadosActivity" />
+        <activity android:name=".TodoActivity" />
+        <activity android:name=".RRHHActivity" />
+        <activity android:name=".FirebaseTestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +26,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -1,0 +1,17 @@
+package com.example.joiner;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.webkit.WebView;
+
+public class WebViewActivity extends AppCompatActivity {
+    WebView web;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_web_view);
+        web = (WebView) findViewById(R.id.mywebview);
+        web.loadUrl("https://hackupc-typekit-playground.herokuapp.com/?surfaceId=connect&apiURL=https://joiner-app.glitch.me/installations/installationId?form_id=3");
+    }
+}
