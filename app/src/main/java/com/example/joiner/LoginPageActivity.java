@@ -12,6 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
+
+
 public class LoginPageActivity extends AppCompatActivity {
 
     private TextView usr_email, usr_pswd;
@@ -44,6 +47,7 @@ public class LoginPageActivity extends AppCompatActivity {
 
     }
     public void login() {
+
             Intent intent = new Intent(this, RRHHActivity.class);
             startActivity(intent);
     }
