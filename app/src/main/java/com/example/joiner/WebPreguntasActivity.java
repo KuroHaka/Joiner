@@ -14,6 +14,7 @@ public class WebPreguntasActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        int id = getIntent().getIntExtra("id", -1);
         setContentView(R.layout.activity_web_view);
         web = (WebView) findViewById(R.id.mywebview);
         web.setVerticalScrollBarEnabled(false);
@@ -23,6 +24,6 @@ public class WebPreguntasActivity extends AppCompatActivity{
         webSettings.setDomStorageEnabled(true);
 
         web.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3");
-        web.loadUrl("https://hackupc-typekit-playground.herokuapp.com/?apiURL=https://joiner-form.glitch.me/installations/installationId");
+        web.loadUrl("https://hackupc-typekit-playground.herokuapp.com/?surfaceId=connect&apiURL=https://joiner-app.glitch.me/installations/installationId?form_id="+id);
     }
 }
