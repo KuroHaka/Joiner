@@ -25,7 +25,6 @@ import java.util.Map;
 public class LoginPageActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Long id;
-    private Boolean is_rrhh;
     private Boolean authenticated = false;;
     private String username;
     private Map<String,Object> informacion;
@@ -50,20 +49,10 @@ public class LoginPageActivity extends AppCompatActivity {
         usr_pswd = findViewById(R.id.password);
         sign_in_btn = findViewById(R.id.sign_in_btn);
 
-        sign_in_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
+        sign_in_btn.setOnClickListener(v -> login());
 
     }
     public void login() {
-        Intent i = new Intent(this, EmployeeActivitie.class);
-        i.putExtra("id", 0);
-        startActivity(i);
-
-
         db.collection("log_in_info")
                 .get()
                 .addOnCompleteListener(task -> {
@@ -85,30 +74,37 @@ public class LoginPageActivity extends AppCompatActivity {
         System.out.println(authenticated);
         if (authenticated){
             authenticated = false;
-            is_rrhh = false;
             db.collection("rrhh_aptitudes")
                     .get()
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
+                            boolean change = true;
                             for (QueryDocumentSnapshot document : task.getResult()) {
-
-                                if (id.equals((Long) document.get("id")))is_rrhh = true;
-
+                                if (id.equals((Long) document.get("id"))){
+                                    changeActivitie(true);
+                                    change = false;
+                                }
+                            }
+                            if(change){
+                                changeActivitie(false);
                             }
                         }
                     });
-            if(is_rrhh){
-                Intent intent = new Intent(this, RRHHActivity.class);
-                startActivity(intent);
-            }
-            else{
-                Intent intent = new Intent(this, EmployeeActivitie.class);
-                intent.putExtra("id", id);
-                startActivity(intent);
-            }
         }
 
     }
+    private void changeActivitie(boolean b){
+        Intent intent;
+        if(b){
+            intent = new Intent(this, RRHHActivity.class);
+        }
+        else{
+            intent = new Intent(this, EmployeeActivitie.class);
+            intent.putExtra("id", id);
+        }
+        startActivity(intent);
+    }
+
 
     public void sign_up() {
         Intent intent = new Intent(this, WebViewActivity.class);
