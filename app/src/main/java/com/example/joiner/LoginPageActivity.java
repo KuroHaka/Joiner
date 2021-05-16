@@ -8,15 +8,23 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.Map;
 
 
 public class LoginPageActivity extends AppCompatActivity {
-
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private Map<String,Object> informacion;
     private TextView usr_email, usr_pswd;
     private Button sign_in_btn, sign_up_btn;
     @Override
@@ -48,6 +56,19 @@ public class LoginPageActivity extends AppCompatActivity {
     }
     public void login() {
 
+        db.collection("log_in_info")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                informacion= document.getData();
+                            }
+                        }
+                    }
+                });
+            System.out.println(informacion);
             Intent intent = new Intent(this, RRHHActivity.class);
             startActivity(intent);
     }
