@@ -58,19 +58,19 @@ public class LoginPageActivity extends AppCompatActivity {
 
         db.collection("log_in_info")
                 .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                informacion= document.getData();
-                            }
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            System.out.println(document.get("Usuario"));
                         }
                     }
+                    else {
+                        System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
+                    }
                 });
-            System.out.println(informacion);
-            Intent intent = new Intent(this, RRHHActivity.class);
-            startActivity(intent);
+        System.out.println(informacion);
+        Intent intent = new Intent(this, RRHHActivity.class);
+        startActivity(intent);
     }
 
     public void sign_up() {
