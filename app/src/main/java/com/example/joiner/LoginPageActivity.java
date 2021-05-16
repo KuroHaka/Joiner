@@ -20,7 +20,7 @@ public class LoginPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_page);
+        setContentView(R.layout.login);
 
         sign_up_btn = findViewById(R.id.sign_up_btn);
 
