@@ -19,7 +19,6 @@
         <activity android:name=".SelectorEmpleadosActivity" />
         <activity android:name=".TodoActivity" />
         <activity android:name=".RRHHActivity" />
-        <activity android:name=".FirebaseTestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

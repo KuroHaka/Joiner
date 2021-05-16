@@ -9,7 +9,7 @@ import android.webkit.WebView;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WebViewActivity extends AppCompatActivity {
+public class WebPreguntasActivity extends AppCompatActivity{
     WebView web;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
