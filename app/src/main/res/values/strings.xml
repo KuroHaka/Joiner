@@ -5,7 +5,7 @@
     <string name="login_btn">Log In</string>
     <string name="sign_in_btn">Sign In</string>
     <string name="add">+</string>
-    <string name="sign_up_txt"><a href="https://hackupc-typekit-playground.herokuapp.com/?surfaceId=connect&apiURL=https://joiner-app.glitch.me/installations/installationId?form_id=3">Sing Up</a></string>
+    <string name="sign_up_btn">Sing Up</string>
     <string name="uppss_you_found_a_dummie_we_still_have_to_implement_this">Uppss you found a dummie, we still have to implement this</string>
     <string name="todo">TODO</string>
 </resources>

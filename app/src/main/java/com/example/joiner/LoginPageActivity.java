@@ -13,18 +13,23 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class LoginPageActivity extends AppCompatActivity {
-    private TextView signup_text;
+
     private TextView usr_email, usr_pswd;
-    private Button sign_in_btn;
+    private Button sign_in_btn, sign_up_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
 
-        signup_text = findViewById(R.id.sign_up_txt);
-        signup_text.setClickable(true);
-        signup_text.setMovementMethod(LinkMovementMethod.getInstance());
+        sign_up_btn = findViewById(R.id.sign_up_btn);
+
+        sign_up_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sign_up();
+            }
+        });
 
         usr_email = findViewById(R.id.email);
         usr_pswd = findViewById(R.id.password);
@@ -41,6 +46,11 @@ public class LoginPageActivity extends AppCompatActivity {
     public void login() {
             Intent intent = new Intent(this, RRHHActivity.class);
             startActivity(intent);
+    }
+
+    public void sign_up() {
+        Intent intent = new Intent(this, WebViewActivity.class);
+        startActivity(intent);
     }
 
 }
