@@ -29,12 +29,7 @@ public class RRHHActivity extends AppCompatActivity {
         rv.setAdapter(ja);
 
         FloatingActionButton fb =  findViewById(R.id.jobadd);
-        fb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                addJob();
-            }
-        });
+        fb.setOnClickListener(view -> addJob());
 
     }
 

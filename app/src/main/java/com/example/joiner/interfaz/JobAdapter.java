@@ -34,12 +34,10 @@ public class JobAdapter extends RecyclerView.Adapter<JobHolder> {
     @Override
     public void onBindViewHolder(@NonNull JobHolder holder, int i) {
         holder.setText(names.get(i));
-        holder.getLl().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (c, SelectorEmpleadosActivity.class);
-                c.startActivity(intent);
-            }
+        holder.getLl().setOnClickListener(view -> {
+            Intent intent = new Intent (c, SelectorEmpleadosActivity.class);
+            intent.putExtra("val",names.get(i));
+            c.startActivity(intent);
         });
     }
 

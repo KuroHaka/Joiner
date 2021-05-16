@@ -24,27 +24,18 @@ public class LoginPageActivity extends AppCompatActivity {
 
         sign_up_btn = findViewById(R.id.sign_up_btn);
 
-        sign_up_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sign_up();
-            }
-        });
+        sign_up_btn.setOnClickListener(v -> sign_up());
 
         usr_email = findViewById(R.id.email);
         usr_pswd = findViewById(R.id.password);
         sign_in_btn = findViewById(R.id.sign_in_btn);
 
-        sign_in_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
+        sign_in_btn.setOnClickListener(v -> login());
 
     }
     public void login() {
             Intent intent = new Intent(this, RRHHActivity.class);
+
             startActivity(intent);
     }
 

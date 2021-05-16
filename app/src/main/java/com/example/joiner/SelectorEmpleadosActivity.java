@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.joiner.dataGenerator.DataGen;
 import com.example.joiner.interfaz.AdapterEmpleado;
 import com.example.joiner.interfaz.Modelo;
 import com.example.joiner.interfaz.ModeloEmpleado;
@@ -36,8 +37,31 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
         models = new ArrayList<>();
         Faker faker = new Faker();
         String name = faker.name().fullName();
+
+        String desc = "";
+        DataGen dg = new DataGen();
+
+        if (getIntent().getStringExtra("val").equals("Programmer")){
+            desc = dg.getLanguages() + "\n\n" + dg.getTechCompanies() + "\n\n"+ dg.getCode() + "\n\n" +
+                dg.getStudies();
+        }
+        else if (getIntent().getStringExtra("val").equals("Waiter")){
+            desc = dg.getLanguages() + "\n\n" + dg.getAsistanceCompanies() + "\n\n" +
+                    dg.getStudies();
+        }
+        else if (getIntent().getStringExtra("val").equals("Musician")){
+            desc = dg.getLanguages() + "\n\n" + dg.getMusicStyle() + "\n\n"  + dg.getInstruments() + "\n\n" +
+                    dg.getStudies();
+        }
+        else{
+            desc = dg.getLanguages() + "\n\n" + dg.getCompanies() + "\n\n"  + dg.getEditorPrograms() + "\n\n" +
+                    dg.getStudies();
+        }
+
+
+
         models.add(new ModeloStatus(true));
-        models.add(new ModeloEmpleado("https://thispersondoesnotexist.com/image", name, "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        models.add(new ModeloEmpleado("https://thispersondoesnotexist.com/image", name, desc));
         models.add(new ModeloStatus(false));
 
         adapter = new AdapterEmpleado(models, this);
@@ -90,6 +114,7 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             public void run() {
                 Intent intent = new Intent(context, SelectorEmpleadosActivity.class);
+                intent.putExtra("val",getIntent().getStringExtra("val"));
                 startActivity(intent);
                 finish();
             }

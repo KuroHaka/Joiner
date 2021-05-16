@@ -19,12 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.startup_page);
         but = findViewById(R.id.initial_login_button);
-        but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
+        but.setOnClickListener(v -> login());
 
     }
     public void login() {
