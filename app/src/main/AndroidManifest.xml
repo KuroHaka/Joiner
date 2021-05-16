@@ -13,8 +13,8 @@
         android:roundIcon="@mipmap/jobr_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".WebViewActivity"></activity>
-        <activity android:name=".WebViewActivty" />
+        <activity android:name=".WebViewActivity"/>
+        <activity android:name=".EmployeeActivitie"/>
         <activity android:name=".LoginPageActivity" />
         <activity android:name=".SelectorEmpleadosActivity" />
         <activity android:name=".TodoActivity" />
