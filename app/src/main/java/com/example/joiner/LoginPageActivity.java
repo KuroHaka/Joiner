@@ -24,6 +24,10 @@ import java.util.Map;
 
 public class LoginPageActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private Long id;
+    private Boolean is_rrhh;
+    private Boolean authenticated = false;;
+    private String username;
     private Map<String,Object> informacion;
     private TextView usr_email, usr_pswd;
     private Button sign_in_btn, sign_up_btn;
@@ -56,21 +60,47 @@ public class LoginPageActivity extends AppCompatActivity {
     }
     public void login() {
 
+
         db.collection("log_in_info")
                 .get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         for (QueryDocumentSnapshot document : task.getResult()) {
-                            System.out.println(document.get("Usuario"));
+                            String email = (String)document.get("email");
+                            String password = (String)document.get("password");
+                            if (email.equals(usr_email.getText().toString()) && password.equals(usr_pswd.getText().toString())){
+                                authenticated = true;
+
+                                username = (String)document.get("Usuario");
+                                id = (Long)document.get("id");
+                            }
+                            //System.out.println(authenticated);
+
                         }
                     }
-                    else {
-                        System.out.println("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
-                    }
                 });
-        System.out.println(informacion);
-        Intent intent = new Intent(this, RRHHActivity.class);
-        startActivity(intent);
+        System.out.println(authenticated);
+        if (authenticated){
+            authenticated = false;
+            is_rrhh = false;
+            db.collection("rrhh_aptitudes")
+                    .get()
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                if (id.equals((Long) document.get("id")))is_rrhh = true;
+
+                            }
+                        }
+                    });
+            Intent intent = new Intent(this, RRHHActivity.class);
+            intent.putExtra("id", id);
+            intent.putExtra("username", username);
+            intent.putExtra("is_rrhh", is_rrhh);
+            startActivity(intent);
+        }
+
     }
 
     public void sign_up() {
