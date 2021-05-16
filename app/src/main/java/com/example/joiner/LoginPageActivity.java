@@ -59,6 +59,9 @@ public class LoginPageActivity extends AppCompatActivity {
 
     }
     public void login() {
+        Intent i = new Intent(this, EmployeeActivitie.class);
+        i.putExtra("id", 0);
+        startActivity(i);
 
 
         db.collection("log_in_info")
@@ -94,11 +97,15 @@ public class LoginPageActivity extends AppCompatActivity {
                             }
                         }
                     });
-            Intent intent = new Intent(this, RRHHActivity.class);
-            intent.putExtra("id", id);
-            intent.putExtra("username", username);
-            intent.putExtra("is_rrhh", is_rrhh);
-            startActivity(intent);
+            if(is_rrhh){
+                Intent intent = new Intent(this, RRHHActivity.class);
+                startActivity(intent);
+            }
+            else{
+                Intent intent = new Intent(this, EmployeeActivitie.class);
+                intent.putExtra("id", id);
+                startActivity(intent);
+            }
         }
 
     }

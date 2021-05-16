@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".WebViewActivity"/>
+        <activity android:name=".WebPreguntasActivity"/>
         <activity android:name=".EmployeeActivitie"/>
         <activity android:name=".LoginPageActivity" />
         <activity android:name=".SelectorEmpleadosActivity" />

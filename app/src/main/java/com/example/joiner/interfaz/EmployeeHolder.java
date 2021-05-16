@@ -1,15 +1,14 @@
 package com.example.joiner.interfaz;
+
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.example.joiner.R;
 
-public class JobHolder extends RecyclerView.ViewHolder {
+public class EmployeeHolder extends RecyclerView.ViewHolder {
     TextView tv;
     RelativeLayout ll;
 
@@ -21,9 +20,9 @@ public class JobHolder extends RecyclerView.ViewHolder {
         return ll;
     }
 
-    public JobHolder(View itemView) {
+    public EmployeeHolder(View itemView) {
         super(itemView);
-        this.tv = itemView.findViewById(R.id.jobTxt);
-        this.ll = itemView.findViewById(R.id.jobLay);
+        this.tv = itemView.findViewById(R.id.employeeTxt);
+        this.ll = itemView.findViewById(R.id.employeeLay);
     }
 }
