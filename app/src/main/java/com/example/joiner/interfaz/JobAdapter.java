@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.joiner.R;
 import com.example.joiner.SelectorEmpleadosActivity;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
@@ -18,10 +19,12 @@ public class JobAdapter extends RecyclerView.Adapter<JobHolder> {
 
     Context c;
     ArrayList<String> names;
+    Long id;
 
-    public JobAdapter(Context c, ArrayList<String> names) {
+    public JobAdapter(Context c, ArrayList<String> names, Long id) {
         this.c = c;
         this.names = names;
+        this.id = id;
     }
 
     @NonNull
@@ -36,6 +39,7 @@ public class JobAdapter extends RecyclerView.Adapter<JobHolder> {
         holder.setText(names.get(i));
         holder.getLl().setOnClickListener(view -> {
             Intent intent = new Intent (c, SelectorEmpleadosActivity.class);
+            intent.putExtra("id", this.id);
             intent.putExtra("val",names.get(i));
             c.startActivity(intent);
         });

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.joiner.interfaz.JobAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,13 +20,12 @@ public class RRHHActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rrhh_home);
         RecyclerView rv = findViewById(R.id.jobrecycle);
         rv.setLayoutManager(new LinearLayoutManager(this));
 
-        JobAdapter ja = new JobAdapter(this, getJobs());
+        JobAdapter ja = new JobAdapter(this, getJobs(),getIntent().getLongExtra("id",-1));
         rv.setAdapter(ja);
 
         FloatingActionButton fb =  findViewById(R.id.jobadd);

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.AnimationUtils;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -16,24 +17,38 @@ import com.example.joiner.interfaz.Modelo;
 import com.example.joiner.interfaz.ModeloEmpleado;
 import com.example.joiner.interfaz.ModeloStatus;
 import com.github.javafaker.Faker;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class SelectorEmpleadosActivity extends AppCompatActivity {
-
+    Map<String,Object> data;
+    String docId;
+    boolean modified;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     ViewPager viewPager;
+    Random r = new Random();
     AdapterEmpleado adapter;
     List<Modelo> models;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     Context context = this;
+    Long id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.post);
 
+
+        this.id = getIntent().getLongExtra("id",-1);
         models = new ArrayList<>();
         Faker faker = new Faker();
         String name = faker.name().fullName();
@@ -93,13 +108,43 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 if(position == 0){
+                    db.collection("rrhh_aptitudes")
+                            .get()
+                            .addOnCompleteListener(task -> {
+                                if (task.isSuccessful()) {
+                                    boolean change = true;
+                                    for (QueryDocumentSnapshot document : task.getResult()) {
+                                        if (id.equals((Long) document.get("id"))){
+                                            docId = document.getId();
+                                            data = (Map<String,Object>)document.getData().get("tags");
+                                            modifygood();
+                                        }
+                                    }
+                                }
+                            });
                     nextPost();
                     viewPager.startAnimation(AnimationUtils.loadAnimation(context, R.anim.fadeout));
-                }
+                    }
+
                 else if (position == 2){
+                    db.collection("rrhh_aptitudes")
+                            .get()
+                            .addOnCompleteListener(task -> {
+                                if (task.isSuccessful()) {
+                                    boolean change = true;
+                                    for (QueryDocumentSnapshot document : task.getResult()) {
+                                        if (id.equals((Long) document.get("id"))){
+                                            docId = document.getId();
+                                            data = (Map<String,Object>)document.getData().get("tags");
+                                            modifybad();
+                                        }
+                                    }
+                                }
+                            });
                     nextPost();
                     viewPager.startAnimation(AnimationUtils.loadAnimation(context, R.anim.fadeout));
                 }
+
             }
 
             @Override
@@ -107,6 +152,62 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void modifygood(){
+        int p = r.nextInt(3);
+        if (p == 0) {
+            data.put("competent", ((Long) data.get("competent")) + 1);
+        } else if (p == 1) {
+            data.put("health", ((Long) data.get("health")) + 1);
+        } else {
+            data.put("party", ((Long) data.get("party")) + 1);
+        }
+        Map<String, Object> mp = new HashMap<>();
+        mp.put("id", id);
+        mp.put("tags", data);
+        db.collection("rrhh_aptitudes").document(docId)
+                .set(mp)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+
+                    }
+                });
+
+    }
+    public void modifybad(){
+        int p = r.nextInt(3);
+        if(p == 0){
+            data.put("competent", ((Long)data.get("competent"))-1);
+        }
+        else if(p==1){
+            data.put("health", ((Long)data.get("health"))-1);
+        }
+        else{
+            data.put("party", ((Long)data.get("party"))-1);
+        }
+        Map<String, Object> mp = new HashMap<>() ;
+        mp.put("id",id);
+        mp.put("tags",data);
+        db.collection("rrhh_aptitudes").document(docId)
+                .set(mp)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+
+                    }
+                });
     }
 
     public void nextPost(){
@@ -118,7 +219,7 @@ public class SelectorEmpleadosActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },500);
+        },300);
     }
 
 

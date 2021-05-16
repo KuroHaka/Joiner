@@ -100,8 +100,8 @@ public class LoginPageActivity extends AppCompatActivity {
         }
         else{
             intent = new Intent(this, EmployeeActivitie.class);
-            intent.putExtra("id", id);
         }
+        intent.putExtra("id", id);
         startActivity(intent);
     }
 
