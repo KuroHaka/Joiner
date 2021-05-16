@@ -14,7 +14,7 @@ public class WebPreguntasActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int id = getIntent().getIntExtra("id", -1);
+        long id = getIntent().getIntExtra("id", -1);
         setContentView(R.layout.activity_web_view);
         web = (WebView) findViewById(R.id.mywebview);
         web.setVerticalScrollBarEnabled(false);
