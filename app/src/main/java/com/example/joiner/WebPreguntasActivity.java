@@ -14,9 +14,10 @@ public class WebPreguntasActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        long id = getIntent().getIntExtra("id", -1);
+        long id = getIntent().getLongExtra("id", -1);
+        String url = "https://hackupc-typekit-playground.herokuapp.com/?surfaceId=connect&apiURL=https://joiner-app.glitch.me/installations/installationId?form_id="+id;
         setContentView(R.layout.activity_web_view);
-        web = (WebView) findViewById(R.id.mywebview);
+        web = findViewById(R.id.mywebview);
         web.setVerticalScrollBarEnabled(false);
         web.setHorizontalScrollBarEnabled(false);
         WebSettings webSettings = web.getSettings();
@@ -24,6 +25,6 @@ public class WebPreguntasActivity extends AppCompatActivity{
         webSettings.setDomStorageEnabled(true);
 
         web.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3");
-        web.loadUrl("https://hackupc-typekit-playground.herokuapp.com/?surfaceId=connect&apiURL=https://joiner-app.glitch.me/installations/installationId?form_id="+id);
+        web.loadUrl(url);
     }
 }
